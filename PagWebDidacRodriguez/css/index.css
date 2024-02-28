@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+:root{
+    --dark: #1b1b1b;
+    --light: whitesmoke;
+    --primary: #053F5C;
+    --primary2: #454545;
+    --primary3: #c74d4d;
+    --secondary: #429EBD;
+    --warning: #F7AD19;
+    --danger: #F27F0C;
+    --info: #9FE7F5;
+}
+/* index.html */
+html, body{
+    font-family: 'Comfortaa', sans-serif;
+    color: var(--light);
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark);
+}
+.header1{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.header1 div{
+    display: flex;
+}
+.header1 .tienda{
+    font-size: 40px;
+}
+.header1 i{
+
+    font-size: 30px;
+}
+.header1 ul{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header1 ul li{
+    padding: 10px 10px 0 10px;
+    display: flex;
+    align-items: center;
+}
+.header1 ul li a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+.header{
+    background-color: var(--dark);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}
+.header div{
+    display: flex;
+}
+.header .tienda{
+    font-size: 40px;
+}
+.header i{
+    font-size: 30px;
+}
+.header ul{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header ul li{
+    padding: 10px 10px 0 10px;
+    display: flex;
+    align-items: center;
+}
+.header ul li a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer ul{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li{
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+}
+footer i{
+    font-size: 25px;
+    color: var(--light);
+}
+.carousel img{
+    height: 770px;
+    object-fit: cover;
+}
+.carousel{
+    padding-bottom: 100px;
+}
+.contenido{
+    width: 60%;
+    margin: auto;
+    height: 50vh;
+}
+.contenido p{
+        padding-bottom: 40px;
+
+}
+.contenido button{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px black solid;
+    background: #c5c5c5ae;
+    
+}
+.contenido button a{
+    text-decoration: none;
+    color: var(--dark);
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.inicisesio input{
+margin-bottom: 10px;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #a3a3a3;
+	background: -webkit-linear-gradient(#939393, #999);
+	background: -o-linear-gradient(#939393, #999);
+    transition: opacity 400ms ease-in;
+}
+.cerrar {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.cerrar:hover { background: #00d9ff; }
+
+/* seccion de articulos */
+.contenidos{
+    height: 150vh;
+}
+.contenidos1{
+    height: 94vh;
+}
+.cesta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.cesta div{
+    text-align: center;
+    background-color: var(--primary2);
+    border-radius: 20px;
+}
+.cesta div:hover{
+    background-color: #303030;
+}
+.cesta div img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.cesta .info{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cesta .info p{
+    background-color: transparent;
+}
+.cesta .info p span{
+    background-color: transparent;
+}
+.cesta .info button{
+    background-color: var(--light);
+    color: var(--dark);
+    border: 1.5px var(--dark) solid;
+    border-radius: 5px;
+}
+section.carrito{
+    height: 82vh;
+}
+section.carrito h1{
+    font-size: 2em;
+    padding-top: 30px;
+    text-align: center;
+}
+section.carrito .productoscomprar{
+    padding-top: 5px;
+    background: -webkit-linear-gradient(#3a3a3a, #2d2d2da5);
+	background: -o-linear-gradient(#3a3a3a, #2d2d2da5);
+    width: 70%;
+    margin: auto;
+}
+section.carrito .productoscomprar ul{
+    padding-left: 100px;
+}
+section.carrito .productoscomprar p{
+    padding-left: 50px;
+}
+section.carrito .productoscomprar .boton{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+section.carrito .productoscomprar button{
+    width: 100px;
+    border-radius: 15px;
+    border: 1.5px var(--dark) solid;
+    background-color: var(--light);
+}
